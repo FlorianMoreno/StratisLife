@@ -12,7 +12,7 @@ while {(true)} do
     {
         _rabbitDistance = _x distance trgRabbit;
         
-        _boundRange = 25;
+        _boundRange = 75;
         
         // is rabbit out of bounds?
         if (_rabbitDistance > _boundRange) then

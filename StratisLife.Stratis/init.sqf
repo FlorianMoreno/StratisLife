@@ -43,7 +43,7 @@ bankcanberobbed = 1;
 // Create a group to assign all the rabbits to. Helps keep track of them.
 groupRabbit = createGroup sideLogic;
 // Number of rabbits in the hunting area to create.
-totalRabbits = 20;
+totalRabbits = 25;
 
 
 //execVM "keybinds.sqf";
