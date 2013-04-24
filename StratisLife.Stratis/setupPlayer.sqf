@@ -56,9 +56,10 @@ if (_state == 2) then
 
 /* Everything else that a player should have regardless of first time or respawn */
     
-	isrestrained = 0; // is this even used?
+	isrestrained = 0; // is this even used? yes
 	victim2 = 0; // is this even used?
-	thirstLevel = 100; // is this even used?
+	thirstLevel = 100; // is this even used? yes
+	hungryLevel = 100; // for new hud
     
     player setVariable["mymoney",0];
     player setVariable["usedspace",0];
