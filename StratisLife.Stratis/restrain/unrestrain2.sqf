@@ -11,7 +11,7 @@ player playMove "";
 disableUserInput false;
 victim2 = 0;
 };
-hint format["%1 has been unrestrained by %2!",_victim,_shooter];
+hint format["%1 has been unrestrained by %2!",(name _victim),(name _shooter)];
 if (side player == west) then {
 _victim removeAction unrestrain;
 _victim removeAction jail;

@@ -1,7 +1,7 @@
 _victim = _this select 0;
 _shooter = _this select 1;
 victim2 = _victim;
-hint format["%1 has been restrained by %2!",_victim,_shooter];
+hint format["%1 has been restrained by %2!",(name _victim),(name _shooter)];
 if (player == _victim) then 
 {
 	titleText ["You have been restrained!","Plain",5];

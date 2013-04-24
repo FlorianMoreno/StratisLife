@@ -1,6 +1,6 @@
 _victim = _this select 0;
 _shooter = _this select 1;
-player globalChat format["%1 has been arrested by %2",_victim,_shooter];
+player globalChat format["%1 has been arrested by %2",(name _victim),(name _shooter)];
 if (player == _victim) then {
 player playMove "";
 titleText ["You have been arrested and put into jail!","Plain",5];

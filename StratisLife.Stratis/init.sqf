@@ -60,7 +60,7 @@ stunnedhint = 0;
 shooterhint = 0;
 "dmg" addPublicVariableEventHandler {currenthp = getDammage player; player setdamage (currenthp - dmg);};
 "transfera" addPublicVariableEventHandler {if(name player == transfern)then{player execVM 'banking\transferbank.sqf';hint format[' %1$ has been transfered to your account ',transfera];};};
-"shooterhint" addPublicVariableEventHandler {hint format["%1 has been stunned by %2", (Name stunnedhint), (name shooterhint)];};
+"shooterhint" addPublicVariableEventHandler {hint format["%1 has been stunned by %2", (name stunnedhint), (name shooterhint)];};
 
 tazerFunction = compile preprocessFileLineNumbers "stunsound.sqf";
 paydayFunction = preprocessFileLineNumbers "banking\paycheck.sqf"; 

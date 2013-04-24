@@ -21,7 +21,7 @@ _spacecolor13 = "#8FF8FF";
 _victim = _this select 0;
 _shooter = _this select 1;
 if (player == _shooter) then {
-hint format ["You are frisking: %1...",_victim];
+hint format ["You are frisking: %1...",(name _victim)];
 sleep 3;
 };
 if (player == _victim) then {
@@ -92,7 +92,7 @@ gotnothinginvvictim = format [""];
 };
 
 if (usedspacevictim == 0) then {
-gotnothinginvvictim = format ["<t color='#F6FF00' size='1'>%1 doesn't have anything in his inventory. <br/>",_victim];
+gotnothinginvvictim = format ["<t color='#F6FF00' size='1'>%1 doesn't have anything in his inventory. <br/>",(name _victim)];
 }
 else {
 gotnothinginvvictim = format [""];
@@ -155,7 +155,7 @@ gotprooilinvvictim = format [""];
 };
 
 if (gotlicensevictim == 0) then {
-gotnolicenseinvvictim = format ["<t color='#F6FF00' size='1'>%1 doesn't have any licenses.<br/>",_victim];
+gotnolicenseinvvictim = format ["<t color='#F6FF00' size='1'>%1 doesn't have any licenses.<br/>",(name _victim)];
 }
 else {
 gotnolicenseinvvictim = format [""];
@@ -182,8 +182,8 @@ else {
 haveairinvvictim = format [""];
 };
 
-if (gunlicensevictim == 1) then {
-havepistolinvvictim = format ["<t color='#D0BAFF' size='1'>Gun license</t> <br/>"]; 
+if (pistollicensevictim == 1) then {
+havepistolinvvictim = format ["<t color='#D0BAFF' size='1'>Pistol license</t> <br/>"]; 
 }
 else {
 havepistolinvvictim = format [""];
@@ -214,11 +214,11 @@ havedmission1invvictim = parseText format ["Package: DP2"];
 };
 
 if (iswantedvictim == 1) then {
-iswantedinvvictim = parseText format ["%1 is wanted!",_victim];
+iswantedinvvictim = parseText format ["%1 is wanted!",(name _victim)];
 wantedcolorinvvictim = _red;
 }
 else {
-iswantedinvvictim = parseText format ["%1 is not wanted.",_victim];
+iswantedinvvictim = parseText format ["%1 is not wanted.",(name _victim)];
 wantedcolorinvvictim = _green;
 };
 
@@ -294,12 +294,12 @@ sleep 2;
 _str = parseText format ["
 <t color='#D9B398' size='2'>%23</t>
 <br/>
-<t color='%1' size='1.2'>used space: %2/%3</t>
+<t color='%1' size='1.2'>Used space: %2/%3</t>
 <br/>
-<t color='%4' size='1.2'>money: %5</t>
+<t color='%4' size='1.2'>Money: %5</t>
 <br/>
 <br/>
-<t color='#D9B398' size='1.5'>inventory</t>
+<t color='#D9B398' size='1.5'>Inventory</t>
 <br/>
 %6
 %7
@@ -309,15 +309,14 @@ _str = parseText format ["
 %11
 %12
 <br/>
-<t color='#D9B398' size='1.5'>licenses</t>
+<t color='#D9B398' size='1.5'>Licenses</t>
 <br/>
-%13
 %14
 %15
 %16
-%17
 %18
 %19
+%24
 <br/>
 <t color='#D9B398' size='1.5'>Other</t>
 <br/>
@@ -348,7 +347,8 @@ haveoilinvvictim, //19
 havedmission1invvictim, //20
 wantedcolorinvvictim, //21
 iswantedinvvictim, //22
-_victim //23
+(name _victim), //23
+havepistolinvvictim //24
 ];
 hint _str;
 sleep 1;
@@ -388,8 +388,8 @@ publicVariable "boatlicensevictim";
 airlicensevictim = 0;
 publicVariable "airlicensevictim"; 
 
-gunlicensevictim = 0;
-publicVariable "gunlicensevictim"; 
+pistollicensevictim = 0;
+publicVariable "pistollicensevictim"; 
 
 riflelicensevictim = 0;
 publicVariable "riflelicensevictim"; 
