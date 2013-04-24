@@ -68,7 +68,7 @@ airlicensevictim = (player getVariable "airlicense");
 publicVariable "airlicensevictim"; 
 
 pistollicensevictim = (player getVariable "pistollicense");
-publicVariable "pistollicense"; 
+publicVariable "pistollicensevictim"; 
 
 riflelicensevictim = (player getVariable "riflelicense");
 publicVariable "riflelicensevictim"; 
@@ -183,7 +183,7 @@ haveairinvvictim = format [""];
 };
 
 if (pistollicensevictim == 1) then {
-havepistolinvvictim = format ["<t color='#D0BAFF' size='1'>Pistol license</t> <br/>"]; 
+havepistolinvvictim = format ["<t color='#D0BAFF' size='1'>Pistol license</t> <br/>"];
 }
 else {
 havepistolinvvictim = format [""];
@@ -316,7 +316,7 @@ _str = parseText format ["
 %16
 %18
 %19
-%24
+%17
 <br/>
 <t color='#D9B398' size='1.5'>Other</t>
 <br/>
@@ -347,8 +347,7 @@ haveoilinvvictim, //19
 havedmission1invvictim, //20
 wantedcolorinvvictim, //21
 iswantedinvvictim, //22
-(name _victim), //23
-havepistolinvvictim //24
+(name _victim) //23
 ];
 hint _str;
 sleep 1;
@@ -388,11 +387,11 @@ publicVariable "boatlicensevictim";
 airlicensevictim = 0;
 publicVariable "airlicensevictim"; 
 
-pistollicensevictim = 0;
-publicVariable "pistollicensevictim"; 
-
 riflelicensevictim = 0;
 publicVariable "riflelicensevictim"; 
+
+pistollicensevictim = 0;
+publicVariable "pistollicensevictim"; 
 
 boatlicensevictim = 0;
 publicVariable "boatlicensevictim"; 

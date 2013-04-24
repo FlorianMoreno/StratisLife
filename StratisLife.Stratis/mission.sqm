@@ -630,8 +630,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2589.3823,109.63831,4894.0591};
-					azimut=433.89368;
+					position[]={2587.8313,109.76444,4893.9502};
+					azimut=794.70294;
 					id=25;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
@@ -650,8 +650,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2930.6714,3.460238,5940.0952};
-					azimut=325;
+					position[]={2919.9431,3.4701421,5933.731};
+					azimut=373.49112;
 					id=26;
 					side="CIV";
 					vehicle="C_man_polo_3_F";
@@ -2869,7 +2869,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=349;
+		items=351;
 		class Item0
 		{
 			position[]={3259.4751,5.3572073,5765.1172};
@@ -6473,6 +6473,30 @@ class Mission
 			text="terrorchopper_Spawn_1";
 			init="this allowDamage false; ";
 		};
+		class Item349
+		{
+			position[]={2918.8208,3.4799511,5938.8013};
+			azimut=206.94344;
+			special="NONE";
+			id=475;
+			side="EMPTY";
+			vehicle="Land_CncBarrier_F";
+			leader=1;
+			skill=0.60000002;
+			description="Civ 1";
+		};
+		class Item350
+		{
+			position[]={2916.4956,3.4886427,5939.9526};
+			azimut=205.73103;
+			special="NONE";
+			id=476;
+			side="EMPTY";
+			vehicle="Land_CncBarrier_F";
+			leader=1;
+			skill=0.60000002;
+			description="Civ 1";
+		};
 	};
 	class Markers
 	{
@@ -6557,7 +6581,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={2931.2688,3.46,5939.5796};
+			position[]={2920.2629,3.4693427,5932.938};
 			name="dpmission";
 			text="Get Delivery Mission";
 			type="mil_dot";

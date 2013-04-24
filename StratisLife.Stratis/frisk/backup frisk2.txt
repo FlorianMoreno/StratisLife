@@ -63,7 +63,7 @@ publicVariable "boatlicensevictim";
 airlicensevictim = airlicense;
 publicVariable "airlicensevictim"; 
 
-pistollicensevictim = gunlicense;
+pistollicensevictim = pistollicense;
 publicVariable "pistollicensevictim"; 
 
 riflelicensevictim = riflelicense;
