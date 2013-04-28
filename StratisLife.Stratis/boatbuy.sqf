@@ -1,5 +1,3 @@
-_vehinit = "_veh = this;_veh lock true;clearWeaponCargo _veh;clearMagazineCargo _veh;clearItemCargo _veh;clearBackpackCargo _veh;";
-carspawn = getMarkerPos "Boatspawn";
 carspawn = getMarkerPos "Boatspawn";
 getmymoney = player getVariable "mymoney";
 
@@ -17,9 +15,15 @@ if((player getVariable "boatlicense") >= 1) then
 				closeDialog 0;
 				player setVariable ['mymoney', getmymoney - thisprice];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
+                
 				_veh = vehname createVehicle (carspawn);
-				_veh setVehicleInit _vehinit;
-				processInitCommands;
+                
+                _veh lock true;
+                clearWeaponCargo _veh;
+                clearMagazineCargo _veh;
+                clearItemCargo _veh;
+                clearBackpackCargo _veh;
+
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
 			else
@@ -37,9 +41,15 @@ if((player getVariable "boatlicense") >= 1) then
 				closeDialog 0;
 				player setVariable ['mymoney', getmymoney - thisprice];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
+                
 				_veh = vehname createVehicle (carspawn);
-				_veh setVehicleInit _vehinit;
-				processInitCommands;
+                
+                _veh lock true;
+                clearWeaponCargo _veh;
+                clearMagazineCargo _veh;
+                clearItemCargo _veh;
+                clearBackpackCargo _veh;
+                
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
 			else
@@ -61,9 +71,15 @@ if((player getVariable "boatlicense") >= 1) then
 				closeDialog 0;
 				player setVariable ['mymoney', getmymoney - thisprice];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
+                
 				_veh = vehname createVehicle (carspawn);
-				_veh setVehicleInit _vehinit;
-				processInitCommands;
+
+                _veh lock true;
+                clearWeaponCargo _veh;
+                clearMagazineCargo _veh;
+                clearItemCargo _veh;
+                clearBackpackCargo _veh;
+
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
 			else
@@ -76,6 +92,5 @@ if((player getVariable "boatlicense") >= 1) then
 {
 hint "You need a boating license to purchase a boat"
 };
-
 
 
