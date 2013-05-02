@@ -34,6 +34,9 @@ if((player getVariable "airlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+				
+				removeammo = _veh;
+				publicVariable "removeammo";
                 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
@@ -60,6 +63,9 @@ if((player getVariable "airlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+				
+				removeammo = _veh;
+				publicVariable "removeammo";
                 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
@@ -90,6 +96,9 @@ if((player getVariable "airlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+				
+				removeammo = _veh;
+				publicVariable "removeammo";
                 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
@@ -116,6 +125,9 @@ if((player getVariable "airlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+				
+				removeammo = _veh;
+				publicVariable "removeammo";
                 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}

@@ -24,6 +24,9 @@ if((player getVariable "boatlicense") >= 1) then
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
 
+				removeammo = _veh;
+				publicVariable "removeammo";
+
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
 			else
@@ -49,6 +52,9 @@ if((player getVariable "boatlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+
+				removeammo = _veh;
+				publicVariable "removeammo";
                 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
@@ -79,6 +85,9 @@ if((player getVariable "boatlicense") >= 1) then
                 clearMagazineCargo _veh;
                 clearItemCargo _veh;
                 clearBackpackCargo _veh;
+				
+				removeammo = _veh;
+				publicVariable "removeammo";
 
 				vehiclelock = _veh addAction ['Unlock / Lock','vehiclelock\unlocklock.sqf',[],7,true,true,'','(_target distance _this) < 4'];
 			}
