@@ -6,4 +6,6 @@ patrolmission = 0;
 patrolearn = 0;
 patrolnumber = 0;
 sleep 2;
-execVM "patrolmission\startpatrol.sqf";
+patrolmission = 0;
+deleteMarkerLocal "patrolmarker";
+hint "Report back to base for more Patrol points";

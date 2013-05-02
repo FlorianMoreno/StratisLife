@@ -1,6 +1,7 @@
 
 if (isServer) then 
 {
+	in_game_vehicles = [];
 	victim = 0;
 	shotby = 0;
 	dmg = 0;
@@ -9,6 +10,9 @@ if (isServer) then
 	//execVM "banking\bankinit.sqf"; //OLD
     execVM "buildinginit.sqf"; // NEW
     execVM "farming\rabbitHunting\starthuntingrabbits.sqf"; //Spawn rabbits in area
+	
+	
+	
 };
 if !(isServer) then 
 {

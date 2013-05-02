@@ -30,10 +30,10 @@ if((player getVariable "airlicense") >= 1) then
 				_veh = vehname createVehicle (carspawn);
                 
                 _veh lock true;
-                clearWeaponCargo _veh;
-                clearMagazineCargo _veh;
-                clearItemCargo _veh;
-                clearBackpackCargo _veh;
+                clearWeaponCargoGlobal _veh;
+                clearMagazineCargoGlobal _veh;
+                clearItemCargoGlobal _veh;
+                clearBackpackCargoGlobal _veh;
 				
 				removeammo = _veh;
 				publicVariable "removeammo";
@@ -59,10 +59,10 @@ if((player getVariable "airlicense") >= 1) then
 				_veh = vehname createVehicle (carspawn);
                 
                 _veh lock true;
-                clearWeaponCargo _veh;
-                clearMagazineCargo _veh;
-                clearItemCargo _veh;
-                clearBackpackCargo _veh;
+                clearWeaponCargoGlobal _veh;
+                clearMagazineCargoGlobal _veh;
+                clearItemCargoGlobal _veh;
+                clearBackpackCargoGlobal _veh;
 				
 				removeammo = _veh;
 				publicVariable "removeammo";
@@ -92,10 +92,10 @@ if((player getVariable "airlicense") >= 1) then
 				_veh = vehname createVehicle (carspawn);
                 
                 _veh lock true;
-                clearWeaponCargo _veh;
-                clearMagazineCargo _veh;
-                clearItemCargo _veh;
-                clearBackpackCargo _veh;
+                clearWeaponCargoGlobal _veh;
+                clearMagazineCargoGlobal _veh;
+                clearItemCargoGlobal _veh;
+                clearBackpackCargoglobal _veh;
 				
 				removeammo = _veh;
 				publicVariable "removeammo";
@@ -121,10 +121,10 @@ if((player getVariable "airlicense") >= 1) then
 				_veh = vehname createVehicle (carspawn);
                 
                 _veh lock true;
-                clearWeaponCargo _veh;
-                clearMagazineCargo _veh;
-                clearItemCargo _veh;
-                clearBackpackCargo _veh;
+                clearWeaponCargoGlobal _veh;
+                clearMagazineCargoGlobal _veh;
+                clearItemCargoGlobal _veh;
+                clearBackpackCargoGlobal _veh;
 				
 				removeammo = _veh;
 				publicVariable "removeammo";

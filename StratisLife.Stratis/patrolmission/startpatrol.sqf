@@ -54,13 +54,6 @@ if (side player == west) then
 				doingpatrol = player addAction ["Finish patrolling","patrolmission\finishpatrol.sqf",[],7,true,true,"","vehicle player in list trgpatrol4"];
 				patroldistance = player distance (getPos trgpatrol4);
 			};
-			default 
-			{
-				patrolmission = 0;
-				deleteMarkerLocal "patrolmarker";
-				 hint "Report back to base for more Patrol points";
-				 exitWith;
-			};
 		};
 		patroldistance = ceil(patroldistance / 1000);
 		_rnumber2 = ((random 300) / 100);
