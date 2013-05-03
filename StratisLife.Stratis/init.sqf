@@ -39,7 +39,7 @@ whalesellprice = 10000;
 oilsellprice = 12000;
 oilprocessprice = 250;
 heroinprocessprice = 250;
-rabbitsellprice = 6000;
+rabbitsellprice = 900;
 
 thirstLevel = 100;
 starttrue = 0;
