@@ -4,7 +4,7 @@
 
 
 
-// Markers = [];
+
 
 while {true} do
 {
@@ -12,7 +12,10 @@ while {true} do
         deleteMarkerLocal _x;
     
     } foreach Markers;
-
+	
+	
+	//Reset Markers array other wise array will just keep getting bigger every loop
+	Markers = [];
     if (side player == West) then {
     
         { 
