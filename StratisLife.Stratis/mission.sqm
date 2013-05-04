@@ -48,6 +48,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ArmA 3 Stratis Life 0.3.5";
+		briefingDescription="Inspired by Arma/Arma2 Life missions. Developers:-Caiden -Zannaza -Ylguf -Allen -Monty -Hawke -Pydrex -JSharpe -Vixus- Jellywilly Stratis Life V. 0.3.5- ALPHA | BLUFOR = COPS | CIVILIAN = CIVS | CIV-COP RATIO = 2:1 !!! MultiOpGaming.net";
 		startWind=0.099999994;
 		forecastWind=0.099999994;
 		forecastWaves=0;
