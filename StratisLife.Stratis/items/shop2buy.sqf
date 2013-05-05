@@ -1,4 +1,5 @@
 getmymoney = player getVariable "mymoney";
+
 if(side player == west) then
 {
 	if((lbCurSel 11191) == 0) then
@@ -8,18 +9,21 @@ if(side player == west) then
 		hint "i've had no buisness in days.";
 	};
 };
+
 if(side player == civilian) then
 {
 	if((lbCurSel 11191) == 0) then
 	{
 		displayname = "Wetsuit";
 		thisprice = 10000;
-		vehname = ['U_B_Wetsuit',1];
+
 		if((player getVariable "mymoney") >= thisprice) then
 		{
 			player setVariable ['mymoney', getmymoney - thisprice];
 			hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
-			scubashopcrate_1 addItemcargo vehname;
+            
+			removeUniform player;
+            player addUniform "U_B_Wetsuit";
 		}
 		else
 		{
@@ -30,12 +34,14 @@ if(side player == civilian) then
 	{
 		displayname = "Rebreather";
 		thisprice = 7500;
-		vehname = ["V_RebreatherB",1];
+
 		if((player getVariable "mymoney") >= thisprice) then
 		{
 			player setVariable ['mymoney', getmymoney - thisprice];
 			hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
-			scubashopcrate_1 addItemcargo vehname;
+            
+
+            player addVest "V_RebreatherB";
 		}
 		else
 		{
@@ -46,12 +52,14 @@ if(side player == civilian) then
 	{
 		displayname = "Goggles";
 		thisprice = 7500;
-		vehname = "G_Diving";
+
 		if((player getVariable "mymoney") >= thisprice) then
 		{
 			player setVariable ['mymoney', getmymoney - thisprice];
 			hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
-			player addGoggles vehname;
+            
+            player addItem "G_Diving";
+            player assignitem "G_Diving";
 		}
 		else
 		{
@@ -62,12 +70,13 @@ if(side player == civilian) then
 	{
 		displayname = "Diving pack";
 		thisprice = 5000;
-		vehname = ["B_AssaultPack_blk",1];
+
 		if((player getVariable "mymoney") >= thisprice) then
 		{
 			player setVariable ['mymoney', getmymoney - thisprice];
 			hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
-			scubashopcrate_1 addBackpackcargo vehname;
+
+            player addBackpack "B_AssaultPack_blk";
 		}
 		else
 		{
