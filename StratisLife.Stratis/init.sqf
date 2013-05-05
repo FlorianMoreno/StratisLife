@@ -141,6 +141,7 @@ execVM "buildingprot.sqf";
 execVM "usedspace.sqf";
 execVM "speedzone.sqf";
 
+call LIFE_fnc_playerMapDiary;
 
 //Playerhud & Thirst
 execVM "playerhud.sqf";
