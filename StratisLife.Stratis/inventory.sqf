@@ -70,7 +70,7 @@ gotunpheroininv = format [""];
 };
 
 if ((player getVariable "itemproheroin") > 0) then {
-gotproheroininv = format ["<t color='#FF8080' size='1'>Heroin:</t><t color='#FF0000' size='1'> %1</t> <br/>", (player getVariable "itemproheroin")];
+gotproheroininv = format ["<t color='#FF8080' size='1'>Processed Heroin:</t><t color='#FF0000' size='1'> %1</t> <br/>", (player getVariable "itemproheroin")];
 }
 else {
 gotproheroininv = format [""];
@@ -97,11 +97,18 @@ else {
 gotprooilinv = format [""];
 };
 
-if ((player getVariable "gotlicense") == 0) then {
+if ((player getVariable "nolicense") == 0) then {
 gotnolicenseinv = format ["<t color='#F6FF00' size='1'>You don't have any licenses.<br/>"];
 }
 else {
 gotnolicenseinv = format [""];
+};
+
+if ((player getVariable "huntinglicense") >= 1) then {
+havehuntinginv = format ["<t color='#D0BAFF' size='1'>Hunting license</t> <br/>"];
+}
+else {
+havehuntinginv = format [""];
 };
 
 if ((player getVariable "driverlicense") >= 1) then {
@@ -257,7 +264,7 @@ _str = parseText format ["
 <t color='%24' size='1.2'>Bankaccount balance: %23</t>
 <br/>
 <br/>
-<t color='#D9B398' size='1.5'>My Stats</t>
+<t color='#D9B398' size='1.5'>Inventory</t>
 <br/>
 %6
 %7
@@ -272,13 +279,13 @@ _str = parseText format ["
 <br/>
 <t color='#D9B398' size='1.5'>Licenses</t>
 <br/>
+%29
 %14
 %15
 %16
 %17
 %18
 %19
-%26
 <br/>
 <t color='#D9B398' size='1.5'>Other</t>
 <br/>
@@ -314,6 +321,7 @@ bankcolorinv, //24
 gotproheroininv, //25
 haveheroininv, //26
 gotwoodinv, //27
-gotmeatinv //28
+gotmeatinv, //28
+havehuntinginv //29
 ];
 hint _str;

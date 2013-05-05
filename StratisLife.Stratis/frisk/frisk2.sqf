@@ -40,7 +40,10 @@ publicVariable "itemfishvictim";
 itemapplevictim = (player getVariable "itemapple");
 publicVariable "itemapplevictim"; 
 
-itemproheroinvictim = (player getVariable "itemunpheroin");
+itemwoodvictim = (player getVariable "itemwood");
+publicVariable "itemwoodvictim"; 
+
+itemunpheroinvictim = (player getVariable "itemunpheroin");
 publicVariable "itemunpheroinvictim"; 
 
 itemproheroinvictim = (player getVariable "itemproheroin");
@@ -48,6 +51,9 @@ publicVariable "itemproheroinvictim";
 
 itemwhalevictim = (player getVariable "itemwhale");
 publicVariable "itemwhalevictim"; 
+
+itemrabbitmeatvictim = (player getVariable "itemrabbitmeat");
+publicVariable "itemrabbitmeatvictim"; 
 
 itemunpoilvictim = (player getVariable "itemunpoil");
 publicVariable "itemunpoilvictim"; 
@@ -66,6 +72,9 @@ publicVariable "boatlicensevictim";
 
 airlicensevictim = (player getVariable "airlicense");
 publicVariable "airlicensevictim"; 
+
+huntinglicensevictim = (player getVariable "huntinglicense");
+publicVariable "huntinglicensevictim"; 
 
 pistollicensevictim = (player getVariable "pistollicense");
 publicVariable "pistollicensevictim"; 
@@ -112,8 +121,15 @@ else {
 gotappleinvvictim = format [""];
 };
 
+if (itemwoodvictim > 0) then {
+gotwoodinvvictim = format ["<t color='#B5FF8A' size='1'>Wood:</t><t color='#4CCF00' size='1'> %1</t> <br/>",itemwoodvictim];
+}
+else {
+gotwoodinvvictim = format [""];
+};
+
 if (itemproheroinvictim > 0) then {
-gotproheroininvvictim = format ["<t color='#FF8080' size='1'>Procecssed Heroin:</t><t color='#FF0000' size='1'> %1</t> <br/>",itemproheroinvictim];
+gotproheroininvvictim = format ["<t color='#FF8080' size='1'>Processed Heroin:</t><t color='#FF0000' size='1'> %1</t> <br/>",itemproheroinvictim];
 }
 else {
 gotproheroininvvictim = format [""];
@@ -124,13 +140,6 @@ gotunpheroininvvictim = format ["<t color='#FF8080' size='1'>Unprocessed Heroin:
 }
 else {
 gotunpheroininvvictim = format [""];
-};
-
-if (itemuproheroinvictim > 0) then {
-gotproheroininvvictim = format ["<t color='#FF8080' size='1'>Processed Heroin:</t><t color='#FF0000' size='1'> %1</t> <br/>",itemunpheroinvictim];
-}
-else {
-gotproheroininvvictim = format [""];
 };
 
 if (itemwhalevictim > 0) then {
@@ -154,6 +163,13 @@ else {
 gotprooilinvvictim = format [""];
 };
 
+if (itemrabbitmeatvictim > 0) then {
+gotrabbitmeatinvvictim = format ["<t color='#B5FF8A' size='1'>Rabbit Meat:</t><t color='#4CCF00' size='1'> %1</t> <br/>",itemrabbitmeatvictim];
+}
+else {
+gotrabbitmeatinvvictim = format [""];
+};
+
 if (gotlicensevictim == 0) then {
 gotnolicenseinvvictim = format ["<t color='#F6FF00' size='1'>%1 doesn't have any licenses.<br/>",(name _victim)];
 }
@@ -166,6 +182,13 @@ havedriverinvvictim = format ["<t color='#D0BAFF' size='1'>Driver license</t> <b
 }
 else {
 havedriverinvvictim = format [""];
+};
+
+if (huntinglicensevictim == 1) then {
+havehuntinginvvictim = format ["<t color='#D0BAFF' size='1'>Hunting license</t> <br/>"];
+}
+else {
+havehuntinginvvictim = format [""];
 };
 
 if (boatlicensevictim == 1) then {
@@ -307,6 +330,8 @@ _str = parseText format ["
 %9
 %10
 %11
+%25
+%26
 %12
 <br/>
 <t color='#D9B398' size='1.5'>Licenses</t>
@@ -317,6 +342,7 @@ _str = parseText format ["
 %18
 %19
 %17
+%24
 <br/>
 <t color='#D9B398' size='1.5'>Other</t>
 <br/>
@@ -336,7 +362,7 @@ gotappleinvvictim, //8
 gotproheroininvvictim, //9
 gotwhaleinvvictim, //10
 gotunpoilinvvictim, //11
-gotunpheroininvvictim, //12
+gotprooilinvvictim, //12
 gotnolicenseinvvictim, //13
 havedriverinvvictim, //14
 haveboatinvvictim, //15
@@ -347,7 +373,10 @@ haveoilinvvictim, //19
 havedmission1invvictim, //20
 wantedcolorinvvictim, //21
 iswantedinvvictim, //22
-(name _victim) //23
+(name _victim), //23
+havehuntinginvvictim, //24
+gotrabbitmeatinvvictim, //25
+gotwoodinvvictim //26
 ];
 hint _str;
 sleep 1;
@@ -363,10 +392,13 @@ publicVariable "itemfishvictim";
 itemapplevictim = 0;
 publicVariable "itemapplevictim"; 
 
+itemwoodvictim = 0;
+publicVariable "itemwoodvictim"; 
+
 itemheroinvictim = 0;
 publicVariable "itemheroinvictim"; 
 
-itemwhalevictim = itemwhale;
+itemwhalevictim = 0;
 publicVariable "itemwhalevictim"; 
 
 itemunpoilvictim = 0;
