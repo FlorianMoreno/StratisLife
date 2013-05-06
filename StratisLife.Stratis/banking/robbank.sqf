@@ -15,7 +15,7 @@ if ((side player) == civilian)then
 			_number1= (floor(random 3) + 1);
 			_number2 = ceil(random 30);
 			sleep (_number1 * _number2);
-			hint "Save cracked";
+			hint "Safe cracked";
 			if (player in list trgBank) then 
 			{
 				[[_pplayer], "robbankFunction", nil, false] spawn BIS_fnc_MP;
