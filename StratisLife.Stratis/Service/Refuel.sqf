@@ -34,7 +34,7 @@ if ( ((vehicle player) != player) && ((vehicle player) iskindof "Car") ) then
         sleep 2;
 
         _mymon = player getVariable "bankmoney";
-        player setVariable["bankmoney",( _mymon - (round _total))];
+        player setVariable["bankmoney",( _mymon - (round _total)),true];
         Hint format ["The price of the service was %1%2. You now have %1%3","$",(round _total),(player getVariable "bankmoney")];
 
         // Restore the action so it can be processed again

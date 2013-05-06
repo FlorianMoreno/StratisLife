@@ -19,7 +19,7 @@ if((lbCurSel 11188) == 0) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
         
         player addItem "itemgps";
@@ -37,7 +37,7 @@ if((lbCurSel 11188) == 1) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
         
 		player addItem "FirstAidKit";
@@ -57,7 +57,7 @@ if((lbCurSel 11188) == 2) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
         
         player addItem "NVGoggles";
@@ -75,7 +75,7 @@ if((lbCurSel 11188) == 3) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
         
 		player addBackpack "B_Bergen_sgg";
@@ -98,7 +98,7 @@ if((lbCurSel 11188) == 0) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 
         player addItem "itemgps";
@@ -116,7 +116,7 @@ if((lbCurSel 11188) == 1) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 
         player addItem "FirstAidKit";
@@ -135,7 +135,7 @@ if((lbCurSel 11188) == 2) then
 	thisprice = 17500;
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
         
         player addItem "NVGoggles";
@@ -153,7 +153,7 @@ if((lbCurSel 11188) == 3) then
 
 	if((player getVariable "mymoney") >= thisprice) then
 	{
-		player setVariable ['mymoney', getmymoney - thisprice];
+		player setVariable ['mymoney', getmymoney - thisprice,true];
 		hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 
         player addBackpack "B_Bergen_sgg";

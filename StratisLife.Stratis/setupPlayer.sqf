@@ -12,27 +12,27 @@ if (_state == 1) then
     player setVariable["myinventory", "_wip"]; //these
     player setVariable["mywanted", "_wip"]; //used?
     
-    player setVariable["isrestrained",0];
+    player setVariable["isrestrained",0,true];
     
-    player setVariable["bankmoney",15000];
-    player setVariable["iswanted",0];
-    player setVariable["isrestrained",0];
-    player setVariable["mypaycheck", 2500];
+    player setVariable["bankmoney",15000,true];
+    player setVariable["iswanted",0,true];
+    player setVariable["isrestrained",0,true];
+    player setVariable["mypaycheck", 2500,true];
 
-    player setVariable["driverlicense",0];
-    player setVariable["airlicense",0];
-    player setVariable["boatlicense",0];
-    player setVariable["oilprocesslicense",0];
-    player setVariable["heroinprocesslicense",0];
-    player setVariable["huntinglicense",0];
-    player setVariable["pistollicense",0];
-    player setVariable["riflelicense",0];
+    player setVariable["driverlicense",0,true];
+    player setVariable["airlicense",0,true];
+    player setVariable["boatlicense",0,true];
+    player setVariable["oilprocesslicense",0,true];
+    player setVariable["heroinprocesslicense",0,true];
+    player setVariable["huntinglicense",0,true];
+    player setVariable["pistollicense",0,true];
+    player setVariable["riflelicense",0,true];
     
     if(side player == west) then
     {
-        player setVariable["driverlicense", 1];
-		player setVariable["pistollicense",1];
-        player setVariable["mypaycheck", 5000];
+        player setVariable["driverlicense", 1,true];
+		player setVariable["pistollicense",1,true];
+        player setVariable["mypaycheck", 5000,true];
         Player addEventHandler ["Fired","shooter = (_this select 0); weapon = (_this select 1); execVM 'firedEH.sqf'"];
         //personalinv = player addaction ["Personal Inventory", "copinventory.sqf", [], 1, false, false, "", ""];
         //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];
@@ -60,20 +60,20 @@ if (_state == 2) then
 	thirstLevel = 100; // is this even used? yes
 	hungryLevel = 100; // for new hud
     
-    player setVariable["mymoney",0];
-    player setVariable["usedspace",0];
-    player setVariable["totalspace",playerTotalSpace];
+    player setVariable["mymoney",0,true];
+    player setVariable["usedspace",0,true];
+    player setVariable["totalspace",playerTotalSpace,true];
     
     // carrying items
-    player setVariable["itemwhale",0];
-    player setVariable["itemunpheroin",0];
-    player setVariable["itemproheroin",0];
-    player setVariable["itemapple",0];
-    player setVariable["itemfish",0];
-    player setVariable["itemunpoil",0];
-    player setVariable["itemprooil",0];
-    player setVariable["itemwood",0];
-    player setVariable["itemrabbitmeat",0];
+    player setVariable["itemwhale",0,true];
+    player setVariable["itemunpheroin",0,true];
+    player setVariable["itemproheroin",0,true];
+    player setVariable["itemapple",0,true];
+    player setVariable["itemfish",0,true];
+    player setVariable["itemunpoil",0,true];
+    player setVariable["itemprooil",0,true];
+    player setVariable["itemwood",0,true];
+    player setVariable["itemrabbitmeat",0,true];
    
     // player setVariable["rabbitmeatModel",0]; // broken for now
     

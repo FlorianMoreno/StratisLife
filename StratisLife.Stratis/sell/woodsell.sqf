@@ -2,11 +2,11 @@ if(floor parseNumber (ctrlText 11185) > 0) then
 {
 	if((player getVariable 'itemwood') >= floor parseNumber (ctrlText 11185)) then 
 	{
-		player setVariable['itemwood',(player getVariable 'itemwood') - floor parseNumber (ctrlText 11185)];
-		player setVariable['mymoney',(player getVariable 'mymoney') + (woodsellprice * floor parseNumber (ctrlText 11185))];
+		player setVariable['itemwood',(player getVariable 'itemwood') - floor parseNumber (ctrlText 11185),true];
+		player setVariable['mymoney',(player getVariable 'mymoney') + (woodsellprice * floor parseNumber (ctrlText 11185)),true];
 		closeDialog 0;
 		hint format ["You have %1$ on you;",player getVariable 'mymoney' ];
-		player setVariable['usedspace',(player getVariable 'usedspace') - floor parseNumber (ctrlText 11185)];
+		player setVariable['usedspace',(player getVariable 'usedspace') - floor parseNumber (ctrlText 11185),true];
 	}
 	else
 	{

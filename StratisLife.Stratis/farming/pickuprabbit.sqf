@@ -41,7 +41,7 @@ if (side player == civilian) then
                     //remove the action so player can't spam pickups
                     player removeAction rabbits;
                     hint format["Picking up rabbit..."];
-                    player setVariable["usedspace",(player getVariable "usedspace") + rabbitrate];
+                    player setVariable["usedspace",(player getVariable "usedspace") + rabbitrate,true];
                     
                     //TODO: Add a pickup animation of some sort here.
                     //remove the model
@@ -49,7 +49,7 @@ if (side player == civilian) then
                     deleteVehicle _rabbit;
                     
                     //update the players inventory
-                    player setVariable["itemrabbitmeat",(player getVariable "itemrabbitmeat") + (rabbitrate)];
+                    player setVariable["itemrabbitmeat",(player getVariable "itemrabbitmeat") + (rabbitrate),true];
 					//pickup delay of 2 seconds
                     sleep 2;
                     hint format["You got %1 rabbit meat",rabbitrate];

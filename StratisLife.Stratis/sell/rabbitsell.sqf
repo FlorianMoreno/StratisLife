@@ -4,11 +4,11 @@ if(floor parseNumber (ctrlText 11180) > 0) then
 	{
         player setVariable["rabbitmeatModel",0];
         
-		player setVariable['itemrabbitmeat',(player getVariable 'itemrabbitmeat') - floor parseNumber (ctrlText 11180)];
-		player setVariable['mymoney',(player getVariable 'mymoney') + (rabbitsellprice * floor parseNumber (ctrlText 11180))];
+		player setVariable['itemrabbitmeat',(player getVariable 'itemrabbitmeat') - floor parseNumber (ctrlText 11180),true];
+		player setVariable['mymoney',(player getVariable 'mymoney') + (rabbitsellprice * floor parseNumber (ctrlText 11180)),true];
 		closeDialog 0;
 		hint format ["You have %1$ on you;",player getVariable 'mymoney' ];
-		player setVariable['usedspace',(player getVariable 'usedspace') - (5 * floor parseNumber (ctrlText 11180))];
+		player setVariable['usedspace',(player getVariable 'usedspace') - (5 * floor parseNumber (ctrlText 11180)),true];
 	}
 	else
 	{

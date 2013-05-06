@@ -4,7 +4,7 @@ _bankrobberylost = ceil(random 10) * 1000;
 
 if (_pplayer == player) then 
 {
-	player setVariable["mymoney", (player getVariable "mymoney") + _robberyreward];
+	player setVariable["mymoney", (player getVariable "mymoney") + _robberyreward,true];
 	robberyreward = _robberyreward;
 	publicvariable "robberyreward";
 	hint format ["You stole %1 from the bank safe",robberyreward];
@@ -12,7 +12,7 @@ if (_pplayer == player) then
 	} 
 	else 
 	{
-		player setVariable["bankmoney", (player getVariable "bankmoney") - _bankrobberylost];
+		player setVariable["bankmoney", (player getVariable "bankmoney") - _bankrobberylost,true];
 		titleText ["The bank was robbed succesfully.", "PLAIN"];
 		hint format ["You lost %1 due to a bank robbery",_bankrobberylost];
 	};

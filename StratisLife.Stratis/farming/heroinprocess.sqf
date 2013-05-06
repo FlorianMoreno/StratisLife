@@ -4,8 +4,8 @@ if((player getVariable 'heroinprocesslicense') >= 1) then
 	{
 		if((player getVariable 'itemunpheroin') >= floor parseNumber (ctrlText 11133)) then 
 		{
-			player setVariable['itemunpheroin',(player getVariable 'itemunpheroin') - floor parseNumber (ctrlText 11133)];
-			player setVariable['itemproheroin',(player getVariable 'itemproheroin') +  floor parseNumber (ctrlText 11133)];
+			player setVariable['itemunpheroin',(player getVariable 'itemunpheroin') - floor parseNumber (ctrlText 11133),true];
+			player setVariable['itemproheroin',(player getVariable 'itemproheroin') +  floor parseNumber (ctrlText 11133),true];
 			closeDialog 0;
 			hint format ["You have %1 processed heroin on you, dont get caught!",player getVariable 'itemproheroin'];
 		}

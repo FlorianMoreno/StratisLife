@@ -1,5 +1,5 @@
 player removeAction doingpatrol;
-player setVariable ["bankmoney", (player getVariable "bankmoney") + patrolearn];
+player setVariable ["bankmoney", (player getVariable "bankmoney") + patrolearn,true];
 hint format ["You've completed your patrol at point %1, You earned %2!",patrolrnumber,patrolearn];
 deleteMarkerLocal "patrolmarker";
 patrolmission = 0;

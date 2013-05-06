@@ -6,7 +6,7 @@ if ((player getVariable "gunlicense") < 1) then {
 hint "You need a Gunlicense to buy this!";
 } else {
 civgunbox addWeaponCargo ["hgun_Rook40_F",1];
-player setVariable["mymoney",(player getVariable "mymoney") - 10000];
+player setVariable["mymoney",(player getVariable "mymoney") - 10000,true];
 hint format["You bought a Pistol for 10000 $! You got %1 $ left!",(player getVariable "mymoney")];
 };
 };

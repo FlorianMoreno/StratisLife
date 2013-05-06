@@ -1,1 +1,1 @@
-player setVariable['bankmoney',((player getVariable 'bankmoney') + transfera)];
+player setVariable['bankmoney',((player getVariable 'bankmoney') + transfera),true];

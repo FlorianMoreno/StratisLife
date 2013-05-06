@@ -45,8 +45,8 @@ if (side player == civilian) then
             
             sleep _itemWait;
 
-            player setVariable["usedspace",(player getVariable "usedspace") + _itemWeight];
-            player setVariable[_itemString,(player getVariable _itemString) + _itemRate];
+            player setVariable["usedspace",(player getVariable "usedspace") + _itemWeight,true];
+            player setVariable[_itemString,(player getVariable _itemString) + _itemRate,true];
             
             hint format["%1", _collectedMsg];
             

@@ -11,7 +11,7 @@ if((player getVariable "riflelicense") >= 1) then
 			vehname = "30Rnd_65x39_caseless_mag";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 				player addMagazine vehname;
 			}
@@ -32,7 +32,7 @@ if((player getVariable "riflelicense") >= 1) then
 			vehname = "30Rnd_65x39_case_mag";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 				player addMagazine vehname;
 			}
@@ -49,7 +49,7 @@ if((player getVariable "riflelicense") >= 1) then
 			vehname = "30Rnd_65x39_caseless_green";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 				player addMagazine vehname;
 			}

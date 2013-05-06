@@ -22,7 +22,7 @@ if((player getVariable "driverlicense") >= 1) then
 			if((player getVariable "mymoney") >= thisprice) then
 			{
 				closeDialog 0;
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
                 
 				_veh = vehname createVehicle (carspawn);
@@ -52,7 +52,7 @@ if((player getVariable "driverlicense") >= 1) then
 			if((player getVariable "mymoney") >= thisprice) then
 			{
 				closeDialog 0;
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
                 
 				_veh = vehname createVehicle (carspawn);
@@ -81,7 +81,7 @@ if((player getVariable "driverlicense") >= 1) then
 			if((player getVariable "mymoney") >= thisprice) then
 			{
 				closeDialog 0;
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
                 
 				_veh = vehname createVehicle (carspawn);
@@ -114,7 +114,7 @@ if((player getVariable "driverlicense") >= 1) then
 			if((player getVariable "mymoney") >= thisprice) then
 			{
 				closeDialog 0;
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
                 
 				_veh = vehname createVehicle (carspawn);
@@ -143,7 +143,7 @@ if((player getVariable "driverlicense") >= 1) then
 			if((player getVariable "mymoney") >= thisprice) then
 			{
 				closeDialog 0;
-				player setVariable ['mymoney', getmymoney - thisprice];
+				player setVariable ['mymoney', getmymoney - thisprice,true];
 				hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
                 
 				_veh = vehname createVehicle (carspawn);

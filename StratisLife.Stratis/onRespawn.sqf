@@ -28,18 +28,18 @@ if (player == _playerasinrespawn) then
 	victim2 = 0;
 	thirstLevel = 100;
     
-    player setVariable["mymoney",0];
-	player setVariable["usedspace",0];
-	player setVariable["totalspace",60];
+    player setVariable["mymoney",0,true];
+	player setVariable["usedspace",0,true];
+	player setVariable["totalspace",60,true];
 
-	player setVariable["itemwhale",0];
-	player setVariable["itemunpheroin",0];
-	player setVariable["itemproheroin",0];
-	player setVariable["itemapple",0];
-	player setVariable["itemfish",0];
-	player setVariable["itemunpoil",0];
-	player setVariable["itemprooil",0];
-	player setVariable["itemwood",0];
+	player setVariable["itemwhale",0,true];
+	player setVariable["itemunpheroin",0,true];
+	player setVariable["itemproheroin",0,true];
+	player setVariable["itemapple",0,true];
+	player setVariable["itemfish",0,true];
+	player setVariable["itemunpoil",0,true];
+	player setVariable["itemprooil",0,true];
+	player setVariable["itemwood",0,true];
 	
     waitUntil { alive player };
 	

@@ -4,7 +4,7 @@ hint format["You need 2000 $ to buy this! You only got %1 $!",(player getVariabl
 } else {
 if ((player getVariable "pistollicense") == 1) then {
 civgunbox addMagazineCargo ["16Rnd_9x21_Mag",6];
-player setVariable["mymoney",(player getVariable "mymoney") - 2000];
+player setVariable["mymoney",(player getVariable "mymoney") - 2000,true];
 hint format["You bought Pistolammo for 2000 $! You got %1 $ left!",(player getVariable "mymoney")];
 } else {
 if (pistollicense == 0) then {

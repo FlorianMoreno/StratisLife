@@ -87,7 +87,7 @@ if ( ((vehicle player) != player) && ((vehicle player) iskindof "Air") ) then
         _veh setfuel 1;
         _total = _total + 1000;
         _mymon = player getVariable "bankmoney";
-        player setVariable["bankmoney",( _mymon - (round _total))];
+        player setVariable["bankmoney",( _mymon - (round _total)),true];
         _mymon = player getVariable "bankmoney";
         
         if(_workwasdone) then
