@@ -1,6 +1,7 @@
 
 if (isServer) then 
 {
+	execVM "\sl_system\init.sqf";
 	in_game_vehicles = [];
 	victim = 0;
 	shotby = 0;
