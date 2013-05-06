@@ -4,7 +4,7 @@
     Takes a player and returns true if they are in the cop slots.
     returns false otherwise.
     
-    example: amISwat = [player] call LIFE_fnc_isCop;
+    example: amICop = [player] call LIFE_fnc_isCop;
     amICop will be true or false.
     
     A cop member is determined by the value of the "name" field given it
