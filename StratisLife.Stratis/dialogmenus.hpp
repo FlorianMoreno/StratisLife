@@ -393,7 +393,7 @@ class HeroinProMenu
 	{
 		idc = -1;
 		text = "Trained to process heroin:";
-		action = "if((player getVariable 'heroinprocesslicense') >= 1) then{}else{if((player getVariable 'mymoney') >= 5000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 5000)]; player setVariable['heroinprocesslicense',1];}};closeDialog 0; execVM 'menu\heroinpromenu.sqf';";
+		action = "if((player getVariable 'heroinprocesslicense') >= 1) then{}else{if((player getVariable 'mymoney') >= 5000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 5000),true]; player setVariable['heroinprocesslicense',1,true];}};closeDialog 0; execVM 'menu\heroinpromenu.sqf';";
 		x = 0.65; y = 0.500;
 		w = 0.4;
 	};
