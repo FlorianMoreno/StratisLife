@@ -46,7 +46,7 @@ class Mission
 	randomSeed=1968423;
 	class Intel
 	{
-		briefingName="ArmA 3 Stratis Life 0.3.6";
+		briefingName="ArmA 3 Stratis Life 0.4";
 		startWind=0.099999994;
 		forecastWind=0.099999994;
 		forecastWaves=0;
@@ -8189,7 +8189,7 @@ class Intro
 			{
 				titleType="TEXT";
 				titleEffect="PLAIN NOFADE";
-				title="Enjoy & Have fun | Inspired by the Original ArmA 2 life missions | Mission made by: Caiden and Zannaza";
+				title="Enjoy & Have fun | Inspired by the Original ArmA 2 life missions | MultiOpGaming.net";
 			};
 		};
 		class Item5
@@ -8276,7 +8276,7 @@ class Intro
 			{
 				titleType="TEXT";
 				titleEffect="PLAIN NOFADE";
-				title="Enjoy & Have fun | Inspired by the Original ArmA 2 life missions | Mission made by: Caiden, Zannaza and Ylguf";
+				title="Enjoy & Have fun | Inspired by the Original ArmA 2 life missions | MultiOpGaming.net";
 			};
 		};
 	};
