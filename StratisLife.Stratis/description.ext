@@ -78,6 +78,17 @@ class CfgNotifications
 		priority = 0;
 		difficulty[] = {"netStats"};
 	};
+    class Warning
+	{
+		title = "Warning";
+        iconPicture = "icons\warningSign.paa";
+		iconText = "";
+		description = "%1";
+        duration = 3;
+		color[] = {1,1,1,1};
+		priority = 0;
+		difficulty[] = {"netStats"};
+	};
 	class Clock
 	{
 		title = "%1";
