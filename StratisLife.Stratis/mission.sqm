@@ -122,7 +122,7 @@ class Mission
 					lock="LOCKEDPLAYER";
 					skill=0.60000002;
 					text="HeliShop2";
-					init="this allowDamage false; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this addAction [""Heli Shop"", ""menu\helimenu.sqf""]; this enableSimulation false;this addAction [""Buy COPHELI License (40.000)"",""licenses\bcopheli.sqf""];";
+					init="this allowDamage false; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this addAction [""Heli Shop"", ""menu\helimenu.sqf""]; this enableSimulation false;";
 				};
 			};
 		};
@@ -832,7 +832,7 @@ class Mission
 					fuel=0;
 					ammo=0;
 					text="GeneralVendor";
-					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""];  this enableSimulation false;this addAction [""Item Menu"", ""items\shop1menu.sqf""];";
+					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this enableSimulation false;this addAction [""Item Menu"", ""items\shop1menu.sqf""];";
 				};
 			};
 		};
@@ -855,7 +855,7 @@ class Mission
 					fuel=0;
 					ammo=0;
 					text="copitem";
-					init="this allowDamage false;  removeAllWeapons CopItem; removeHeadgear CopItem; this stop true; this enableSimulation false; this addAction [""Licenses"",""menu\licensemenu.sqf""]; this addAction [""Item Menu"", ""items\shop1menu.sqf""];this addAction [""Pistol Menu"", ""weapons\pistolmenu.sqf""];this addAction [""Rifle Menu"", ""weapons\riflemenu.sqf""];";
+					init="this allowDamage false;  removeAllWeapons CopItem; removeHeadgear CopItem; this stop true; this enableSimulation false; this addAction [""Licenses"",""menu\licensemenu.sqf""]; this addAction [""Item Menu"", ""items\shop1menu.sqf""]; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""]; ";
 				};
 			};
 		};
@@ -899,7 +899,7 @@ class Mission
 					fuel=0;
 					ammo=0;
 					text="processoil";
-					init="this allowDamage false; this stop true; oillicenseadd = this addAction [""Buy Processing License [5.000]"",""licenses\bprooil.sqf""]; this addAction [""Process Oil"",""menu\oilpromenu.sqf""]; ATLToASLthis stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM"";";
+					init="this allowDamage false; this stop true; oillicenseadd = this addAction [""Process Oil"",""menu\oilpromenu.sqf""]; ATLToASLthis stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM"";";
 				};
 			};
 		};
@@ -1614,7 +1614,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="RifleVendor";
-					init="removeAllWeapons this; this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM"";  this addAction [""Rifle Menu"", ""weapons\riflemenu.sqf""];";
+					init="removeAllWeapons this; this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM"";  this addAction [""Rifle Menu"", ""weapons\riflemenu.sqf""]; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""]; ";
 				};
 			};
 		};
@@ -1782,7 +1782,7 @@ class Mission
 					fuel=0;
 					ammo=0;
 					text="SecretVendor";
-					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""];";
+					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""]; this addAction [""Bank Menu"", ""banking\bankmenu.sqf""];";
 					description="secret vendor";
 				};
 			};
@@ -1804,7 +1804,7 @@ class Mission
 					fuel=0;
 					ammo=0;
 					text="SecretVendor_1";
-					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""];";
+					init="this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this enableSimulation false; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""]; this addAction [""Bank Menu"", ""banking\bankmenu.sqf""];";
 					description="secret vendor";
 				};
 			};
@@ -3177,7 +3177,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=378;
+		items=377;
 		class Item0
 		{
 			position[]={3259.4751,5.3572073,5765.1172};
@@ -6890,16 +6890,18 @@ class Mission
 		};
 		class Item358
 		{
-			position[]={4176.6875,5.8343015,7297.8218};
-			azimut=91.560478;
+			position[]={1989.0457,2.9874146,3492.9453};
+			azimut=174.16956;
 			id=498;
 			side="EMPTY";
-			vehicle="Box_NATO_Wps_F";
+			vehicle="Land_HBarrier_5_F";
+			leader=1;
 			skill=0.60000002;
+			description="Cop 25 (Need to be on ts)";
 		};
 		class Item359
 		{
-			position[]={1989.0457,2.9874146,3492.9453};
+			position[]={1992.5977,3.2413769,3493.2227};
 			azimut=174.16956;
 			id=499;
 			side="EMPTY";
@@ -6910,7 +6912,7 @@ class Mission
 		};
 		class Item360
 		{
-			position[]={1992.5977,3.2413769,3493.2227};
+			position[]={1996.4823,3.5074053,3493.667};
 			azimut=174.16956;
 			id=500;
 			side="EMPTY";
@@ -6921,7 +6923,7 @@ class Mission
 		};
 		class Item361
 		{
-			position[]={1996.4823,3.5074053,3493.667};
+			position[]={2000.4229,3.7634034,3494.1113};
 			azimut=174.16956;
 			id=501;
 			side="EMPTY";
@@ -6932,7 +6934,7 @@ class Mission
 		};
 		class Item362
 		{
-			position[]={2000.4229,3.7634034,3494.1113};
+			position[]={2004.5298,4.3803539,3494.5552};
 			azimut=174.16956;
 			id=502;
 			side="EMPTY";
@@ -6943,7 +6945,7 @@ class Mission
 		};
 		class Item363
 		{
-			position[]={2004.5298,4.3803539,3494.5552};
+			position[]={2007.0826,5.0074353,3494.8325};
 			azimut=174.16956;
 			id=503;
 			side="EMPTY";
@@ -6954,7 +6956,7 @@ class Mission
 		};
 		class Item364
 		{
-			position[]={2007.0826,5.0074353,3494.8325};
+			position[]={2010.1904,5.5637646,3495.165};
 			azimut=174.16956;
 			id=504;
 			side="EMPTY";
@@ -6965,8 +6967,8 @@ class Mission
 		};
 		class Item365
 		{
-			position[]={2010.1904,5.5637646,3495.165};
-			azimut=174.16956;
+			position[]={2012.2439,5.4157109,3497.8291};
+			azimut=266.0787;
 			id=505;
 			side="EMPTY";
 			vehicle="Land_HBarrier_5_F";
@@ -6976,8 +6978,8 @@ class Mission
 		};
 		class Item366
 		{
-			position[]={2012.2439,5.4157109,3497.8291};
-			azimut=266.0787;
+			position[]={1961.0308,3.641665,3533.9785};
+			azimut=102.67581;
 			id=506;
 			side="EMPTY";
 			vehicle="Land_HBarrier_5_F";
@@ -6987,7 +6989,7 @@ class Mission
 		};
 		class Item367
 		{
-			position[]={1961.0308,3.641665,3533.9785};
+			position[]={1961.8955,4.0977149,3537.4346};
 			azimut=102.67581;
 			id=507;
 			side="EMPTY";
@@ -6998,7 +7000,7 @@ class Mission
 		};
 		class Item368
 		{
-			position[]={1961.8955,4.0977149,3537.4346};
+			position[]={1961.0862,3.6400023,3533.9785};
 			azimut=102.67581;
 			id=508;
 			side="EMPTY";
@@ -7009,7 +7011,7 @@ class Mission
 		};
 		class Item369
 		{
-			position[]={1961.0862,3.6400023,3533.9785};
+			position[]={1961.9509,4.0891247,3537.4346};
 			azimut=102.67581;
 			id=509;
 			side="EMPTY";
@@ -7020,8 +7022,8 @@ class Mission
 		};
 		class Item370
 		{
-			position[]={1961.9509,4.0891247,3537.4346};
-			azimut=102.67581;
+			position[]={1957.903,2.8641829,3515.7529};
+			azimut=99.670631;
 			id=510;
 			side="EMPTY";
 			vehicle="Land_HBarrier_5_F";
@@ -7031,7 +7033,7 @@ class Mission
 		};
 		class Item371
 		{
-			position[]={1957.903,2.8641829,3515.7529};
+			position[]={1958.5853,2.7976835,3519.2483};
 			azimut=99.670631;
 			id=511;
 			side="EMPTY";
@@ -7042,7 +7044,7 @@ class Mission
 		};
 		class Item372
 		{
-			position[]={1958.5853,2.7976835,3519.2483};
+			position[]={1957.9584,2.861901,3515.7566};
 			azimut=99.670631;
 			id=512;
 			side="EMPTY";
@@ -7053,7 +7055,7 @@ class Mission
 		};
 		class Item373
 		{
-			position[]={1957.9584,2.861901,3515.7566};
+			position[]={1958.6407,2.7969906,3519.252};
 			azimut=99.670631;
 			id=513;
 			side="EMPTY";
@@ -7064,8 +7066,8 @@ class Mission
 		};
 		class Item374
 		{
-			position[]={1958.6407,2.7969906,3519.252};
-			azimut=99.670631;
+			position[]={2012.2439,5.4293671,3497.7739};
+			azimut=266.0787;
 			id=514;
 			side="EMPTY";
 			vehicle="Land_HBarrier_5_F";
@@ -7075,7 +7077,7 @@ class Mission
 		};
 		class Item375
 		{
-			position[]={2012.2439,5.4293671,3497.7739};
+			position[]={2012.355,5.9758081,3495.2769};
 			azimut=266.0787;
 			id=515;
 			side="EMPTY";
@@ -7086,20 +7088,9 @@ class Mission
 		};
 		class Item376
 		{
-			position[]={2012.355,5.9758081,3495.2769};
-			azimut=266.0787;
-			id=516;
-			side="EMPTY";
-			vehicle="Land_HBarrier_5_F";
-			leader=1;
-			skill=0.60000002;
-			description="Cop 25 (Need to be on ts)";
-		};
-		class Item377
-		{
 			position[]={1960.1948,2.9051147,3529.6304};
 			azimut=99.670631;
-			id=517;
+			id=516;
 			side="EMPTY";
 			vehicle="Land_HBarrier_5_F";
 			leader=1;
@@ -7264,7 +7255,7 @@ class Mission
 		{
 			position[]={2867.3997,2.7024035,6094.5405};
 			name="im";
-			text="itemshop";
+			text="Gear Shop";
 			type="mil_dot";
 			colorName="ColorGreen";
 			a=0.5;
@@ -7297,7 +7288,7 @@ class Mission
 		{
 			position[]={2778.4949,0.010994191,6100.4771};
 			name="im_1";
-			text="boatshop";
+			text="Boat shop";
 			type="mil_dot";
 			colorName="ColorGreen";
 			a=0.5;
@@ -7416,22 +7407,6 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={163.271,0.97753274,8004.6963};
-			name="made by1_1";
-			text="Mission originally made by:";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item34
-		{
-			position[]={163.10904,0.35680532,7937.7393};
-			name="Caiden, Zannaza & Ylguf_1";
-			text="Caiden, Zannaza & Ylguf";
-			type="mil_dot";
-			colorName="ColorBlue";
-		};
-		class Item35
-		{
 			position[]={1996.5725,2.9148951,3528.0664};
 			name="atm_1_1_2";
 			text="ATM";
@@ -7440,7 +7415,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item36
+		class Item34
 		{
 			position[]={1923.115,5.5,5908.5713};
 			name="atm_1_1_2_1";
@@ -7450,7 +7425,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item37
+		class Item35
 		{
 			position[]={2149.9382,8.7086992,5395.291};
 			name="atm_1_1_2_1_1";
@@ -7460,17 +7435,17 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item38
+		class Item36
 		{
-			position[]={6408.6929,7.9505615,5395.8877};
+			position[]={6412.7568,7.8515477,5403.0293};
 			name="RifleShop";
-			text="Rifle Shop";
+			text="Weapon Shop";
 			type="mil_dot";
 			colorName="ColorGreen";
 			a=0.5;
 			b=0.5;
 		};
-		class Item39
+		class Item37
 		{
 			position[]={5022.9771,208.61259,5907.1333};
 			name="GeneralMarket";
@@ -7480,7 +7455,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item40
+		class Item38
 		{
 			position[]={3243.731,4.9441757,5810.1099};
 			name="PoliceBase";
@@ -7490,7 +7465,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item41
+		class Item39
 		{
 			position[]={4350.0176,81.402077,5949.9863};
 			name="Forestry";
@@ -7500,7 +7475,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item42
+		class Item40
 		{
 			position[]={2759.7454,2.0084112,5885.6108};
 			name="CheckPoint1";
@@ -7510,7 +7485,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item43
+		class Item41
 		{
 			position[]={3772.5315,194.73012,4786.2861};
 			name="CheckPoint3";
@@ -7520,7 +7495,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item44
+		class Item42
 		{
 			position[]={2859.0457,2.6675653,6102.0815};
 			name="SafeZone";
@@ -7530,7 +7505,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item45
+		class Item43
 		{
 			position[]={4009.5161,119.72594,6340.3916};
 			name="CheckPoint2";
@@ -7540,7 +7515,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item46
+		class Item44
 		{
 			position[]={2797.0781,67.431732,2299.2974};
 			name="HuntingArea";
@@ -7550,7 +7525,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item47
+		class Item45
 		{
 			position[]={2741.9817,4.6091642,5736.6572};
 			name="carshopflag_1";
@@ -7559,14 +7534,14 @@ class Mission
 			colorName="ColorGreen";
 			angle=-3.4705999;
 		};
-		class Item48
+		class Item46
 		{
 			position[]={2758.3071,4.1057301,5735.4541};
 			name="carspawn1";
 			type="Empty";
 			angle=-27.719299;
 		};
-		class Item49
+		class Item47
 		{
 			position[]={2752.928,4.389648,5733.8184};
 			name="Safe_Zone_Text";
@@ -7580,7 +7555,7 @@ class Mission
 			angle=-22;
 			drawBorder=1;
 		};
-		class Item50
+		class Item48
 		{
 			position[]={2753.8152,3.7718732,5744.9609};
 			name="SafeZone_1";
@@ -7590,7 +7565,7 @@ class Mission
 			a=0;
 			b=0;
 		};
-		class Item51
+		class Item49
 		{
 			position[]={2707.2715,0.19925779,6051.1553};
 			name="Scuba_shop1";
@@ -7600,7 +7575,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item52
+		class Item50
 		{
 			position[]={2772.6785,3.6560156,5731.9756};
 			name="repairshop";
@@ -7610,7 +7585,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item53
+		class Item51
 		{
 			position[]={1711.4033,5.5,5141.1563};
 			name="repairshop_1";
@@ -7620,48 +7595,48 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item54
+		class Item52
 		{
-			position[]={4462.0928,-0.2405145,7711.7373};
+			position[]={3448.2461,-0.15111843,1120.145};
 			name="ts_info";
-			text="TeamSpeak Server Info: 109.70.149.74";
+			text="TeamSpeak Server Info: 109.70.149.74 or ts.multiopgaming.net";
 			type="mil_warning";
 		};
-		class Item55
+		class Item53
 		{
-			position[]={4460.585,-0.18296075,7956.834};
+			position[]={3454.6262,-0.050438188,781.3335};
 			name="cop_info";
 			text="All Cops must be on TeamSpeak";
 			type="mil_warning";
 		};
-		class Item56
+		class Item54
 		{
-			position[]={158.96025,0.35450852,7852.9443};
+			position[]={169.53992,0.28856879,7951.3359};
 			name="dev_l";
-			text="With Development Help from:";
+			text="This mission is being developed by:";
 			type="mil_dot";
 		};
-		class Item57
+		class Item55
 		{
-			position[]={158.23622,0.10039492,7763.5127};
+			position[]={172.8369,0.0067126006,7848.2808};
 			name="dev_names";
-			text="JSharpe, Hawke, Montgomery, Allen, Pydrex, Vixus and JellyWilly";
+			text="Ylguf, JSharpe, Hawke, Montgomery, Pydrex, Vixus and JellyWilly";
 			type="hd_dot";
 			colorName="ColorBlue";
 		};
-		class Item58
+		class Item56
 		{
 			position[]={3241.4333,5.4084172,5779.0669};
 			name="respawn_west_1";
 			type="Empty";
 		};
-		class Item59
+		class Item57
 		{
 			position[]={2867.9197,2.6665387,6072.9829};
 			name="respawn_civilian_1";
 			type="Empty";
 		};
-		class Item60
+		class Item58
 		{
 			position[]={4192.0596,204.59932,4570.1133};
 			name="atm_1_1_2_2";
@@ -7671,7 +7646,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item61
+		class Item59
 		{
 			position[]={6410.6489,8,5378.2808};
 			name="atm_1_1_2_3";
@@ -7681,6 +7656,23 @@ class Mission
 			a=0.5;
 			b=0.5;
 			angle=84.788063;
+		};
+		class Item60
+		{
+			position[]={3456.4082,0.035993353,442.49072};
+			name="swat_info1";
+			text="SWAT Slot's are reserved for trained members only";
+			type="mil_warning";
+		};
+		class Item61
+		{
+			position[]={2707.877,2.5999999,5791.3735};
+			name="petrolstation";
+			text="Refueling Station";
+			type="Empty";
+			colorName="ColorGreen";
+			a=0;
+			b=0;
 		};
 	};
 	class Sensors
