@@ -37,3 +37,9 @@ player execVM "onRespawncops.sqf";
         _p selectWeapon (_muzzles select 0);
 };
 };
+
+if ( [player] call LIFE_fnc_isSwat ) then
+{
+    [player] call LIFE_fnc_swatLoadout;
+};
+

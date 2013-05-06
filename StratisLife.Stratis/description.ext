@@ -11,7 +11,7 @@ disabledAI = true;
 #include "dialogmenus2.hpp"
 #include "dialogitems.hpp"
 author="Caiden, Zannaza and Ylguf";
-OnLoadName = "Stratis Life 0.3.5";
+OnLoadName = "Stratis Life 0.3.6";
 OnLoadMission = "This is a Roleplaying mission. Play by the rules and have fun!";
 loadScreen = "stratis life logo.paa";
 
@@ -124,6 +124,24 @@ class CfgFunctions
             class playerMapDiary
             {
                 description="Generate the diary on a players map.";
+            };
+        };
+        
+        class Players
+        {
+            class playerStrip
+            {
+                description="Strips the player of ALL their gear.";
+            };
+            
+            class isSwat
+            {
+                description="checks if the player passed is a member of swat";
+            };
+            
+            class swatLoadout
+            {
+                description="Kits out swat members with gear.";
             };
         };
 	};

@@ -2880,11 +2880,11 @@ class Mission
 					azimut=-317.00101;
 					id=126;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="Swat_0";
+					text="swat_0";
 					init="removeHeadgear this; this addHeadgear ""H_HelmetB_paint""; _xhandle = this addEventHandler [""killed"", ""_this execvm 'weaponrespawn.sqf'""]; removeVest this; this addVest ""V_PlateCarrierGL_rgr""; this addeventhandler [""killed"",{hidebody (_this select 0)}];";
 					description="SWAT Leader (Must Be Trained and on TS)";
 				};
@@ -2902,11 +2902,11 @@ class Mission
 					azimut=-317.00101;
 					id=127;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="Swat_1";
+					text="swat_1";
 					init="removeHeadgear this; this addHeadgear ""H_HelmetB_paint""; _xhandle = this addEventHandler [""killed"", ""_this execvm 'weaponrespawn.sqf'""]; removeVest this; this addVest ""V_PlateCarrierGL_rgr""; this addeventhandler [""killed"",{hidebody (_this select 0)}];";
 					description="SWAT 1 (Must Be Trained and on TS)";
 				};
@@ -2924,7 +2924,7 @@ class Mission
 					azimut=-317.00101;
 					id=128;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2946,7 +2946,7 @@ class Mission
 					azimut=-317.00101;
 					id=129;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2968,7 +2968,7 @@ class Mission
 					azimut=-317.00101;
 					id=130;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2990,7 +2990,7 @@ class Mission
 					azimut=-317.00101;
 					id=131;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3012,7 +3012,7 @@ class Mission
 					azimut=-317.00101;
 					id=132;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3034,7 +3034,7 @@ class Mission
 					azimut=-317.00101;
 					id=133;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3056,7 +3056,7 @@ class Mission
 					azimut=-317.00101;
 					id=134;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3078,7 +3078,7 @@ class Mission
 					azimut=-317.00101;
 					id=135;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3100,7 +3100,7 @@ class Mission
 					azimut=-317.00101;
 					id=136;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3122,7 +3122,7 @@ class Mission
 					azimut=-317.00101;
 					id=137;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3144,7 +3144,7 @@ class Mission
 					azimut=-317.00101;
 					id=138;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;

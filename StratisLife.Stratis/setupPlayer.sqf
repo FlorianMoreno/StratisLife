@@ -52,6 +52,10 @@ if (_state == 2) then
     //not 100% sure if this works due to how addMPEventHandler handles parameter passing.
 };
 
+if ( [player] call LIFE_fnc_isSwat ) then
+{
+    [player] call LIFE_fnc_swatLoadout;
+};
 
 /* Everything else that a player should have regardless of first time or respawn */
     
