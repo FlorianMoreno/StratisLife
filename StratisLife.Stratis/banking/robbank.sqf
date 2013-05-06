@@ -13,7 +13,7 @@ if ((side player) == civilian)then
 			["", "robbanksirenFunction", nil, false] spawn BIS_fnc_MP;
 			hint "Cracking the safe! Dont bail now.";
 			_number1= (floor(random 3) + 1);
-			_number2 = ceil(random 30);
+			_number2 = ceil(random 30) + 120;
 			sleep (_number1 * _number2);
 			hint "Safe cracked";
 			if (player in list trgBank) then 
