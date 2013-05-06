@@ -134,6 +134,11 @@ class CfgFunctions
                 description="Strips the player of ALL their gear.";
             };
             
+            class isCop
+            {
+                description="checks if the player passed is a member of cop";
+            };
+            
             class isSwat
             {
                 description="checks if the player passed is a member of swat";
