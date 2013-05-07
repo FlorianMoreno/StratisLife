@@ -15,8 +15,6 @@ _ply = _this select 0;
     removebackpack _ply;
 
 //Uniform
-    removeuniform _ply;
-    _ply adduniform "U_O_PilotCoveralls";
 
 //Headgear
     removeheadgear _ply;

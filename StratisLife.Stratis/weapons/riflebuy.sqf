@@ -12,7 +12,7 @@ if(primaryWeapon player == "") then
 				vehname = "arifle_MXC_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{
-					player setVariable ['mymoney', getmymoney - thisprice,true`];
+					player setVariable ['mymoney', getmymoney - thisprice,true];
 					hint format['You bought a %1 for %2$! You have %3 $ left!',displayname,thisprice,(player getVariable 'mymoney')];
 					player addweapon vehname;
 				}
