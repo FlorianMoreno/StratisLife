@@ -195,7 +195,6 @@ if ( [player] call LIFE_fnc_isSwat ) then
             //null = [] execvm "somstart.sqf";
             //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];
         };
-		execvm "applepicking.sqf";
 		sleep (random 6);
 		jip_uid = [getplayeruid player,player];
 		publicvariableserver "jip_uid";
