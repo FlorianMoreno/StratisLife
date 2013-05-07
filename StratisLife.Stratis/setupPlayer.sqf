@@ -66,7 +66,7 @@ if ( [player] call LIFE_fnc_isSwat ) then
     
     player setVariable["mymoney",0,true];
     player setVariable["usedspace",0,true];
-    player setVariable["totalspace",playerTotalSpace,true];
+    player setVariable["totalspace",60,true];
     
     // carrying items
     player setVariable["itemwhale",0,true];
