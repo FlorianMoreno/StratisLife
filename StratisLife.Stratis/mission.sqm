@@ -1614,7 +1614,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="RifleVendor";
-					init="removeAllWeapons this; this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM"";  this addAction [""Rifle Menu"", ""weapons\riflemenu.sqf""]; this addAction [""Weapon Menu"", ""weapons\weaponmenu.sqf""]; ";
+					init="removeAllWeapons this; this allowDamage false; this stop true; this stop true; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""MOVE""; this disableAI ""ANIM""; this disableAI ""FSM""; this addAction [""Pistol Menu"", ""weapons\pistolmenu.sqf""]; this addAction [""Rifle Menu"", ""weapons\riflemenu.sqf""];";
 				};
 			};
 		};
