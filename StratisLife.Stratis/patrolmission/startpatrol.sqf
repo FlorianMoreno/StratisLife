@@ -59,12 +59,12 @@ if (side player == west) then
 		_rnumber2 = ((random 300) / 100);
 		switch (patroldistance) do
 		{
-			case 1: {patrolearn = floor(1000 * _rnumber2);};
-			case 2: {patrolearn = floor(2000 * _rnumber2);};
-			case 3: {patrolearn = floor(3000 * _rnumber2);};
-			case 4: {patrolearn = floor(4000 * _rnumber2);};
-			case 5: {patrolearn = floor(5000 * _rnumber2);};
-			Default {patrolearn = floor(6000 * _rnumber2);};
+			case 1: {patrolearn = floor(2000 * _rnumber2);};
+			case 2: {patrolearn = floor(4000 * _rnumber2);};
+			case 3: {patrolearn = floor(6000 * _rnumber2);};
+			case 4: {patrolearn = floor(8000 * _rnumber2);};
+			case 5: {patrolearn = floor(10000 * _rnumber2);};
+			Default {patrolearn = floor(10000 * _rnumber2);};
 		};
 	}
 	else

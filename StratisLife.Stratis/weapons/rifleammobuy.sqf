@@ -6,7 +6,7 @@ if((player getVariable "riflelicense") >= 1) then
 		if((lbCurSel 11173) == 0) then
 		{
 			displayname = "MXC mag";
-			thisprice = 2000;
+			thisprice = 400;
 			amount = 1;
 			vehname = "30Rnd_65x39_caseless_mag";
 			if((player getVariable "mymoney") >= thisprice) then
@@ -27,7 +27,7 @@ if((player getVariable "riflelicense") >= 1) then
 		if((lbCurSel 11173) == 0) then
 		{
 			displayname = "TRG20 mag";
-			thisprice = 2000;
+			thisprice = 7500;
 			amount = 1;
 			vehname = "30Rnd_65x39_case_mag";
 			if((player getVariable "mymoney") >= thisprice) then
@@ -44,7 +44,7 @@ if((player getVariable "riflelicense") >= 1) then
 		if((lbCurSel 11173) == 1) then
 		{
 			displayname = "Katiba mag";
-			thisprice = 2000;
+			thisprice = 7500;
 			amount = 1;
 			vehname = "30Rnd_65x39_caseless_green";
 			if((player getVariable "mymoney") >= thisprice) then

@@ -8,7 +8,7 @@ if(primaryWeapon player == "") then
 			if((lbCurSel 11173) == 0) then								
 			{
 				displayname = "MXC";
-				thisprice = 15000;
+				thisprice = 30000;
 				vehname = "arifle_MXC_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{
@@ -28,7 +28,7 @@ if(primaryWeapon player == "") then
 			if((lbCurSel 11173) == 0) then
 			{
 				displayname = "TRG20";
-				thisprice = 20000;
+				thisprice = 70000;
 				vehname = "arifle_TRG20_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{
@@ -44,7 +44,7 @@ if(primaryWeapon player == "") then
 			if((lbCurSel 11173) == 1) then
 			{
 				displayname = "Katiba";
-				thisprice = 20000;
+				thisprice = 70000;
 				vehname = "arifle_Khaybar_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{

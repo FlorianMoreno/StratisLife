@@ -28,7 +28,7 @@ if(handgunWeapon player == "") then
 			if((lbCurSel 11169) == 0) then
 			{
 				displayname = "Rook40";
-				thisprice = 10000;
+				thisprice = 15000;
 				vehname = "hgun_Rook40_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{
@@ -44,7 +44,7 @@ if(handgunWeapon player == "") then
 			if((lbCurSel 11169) == 1) then
 			{
 				displayname = "P07";
-				thisprice = 12500;
+				thisprice = 17500;
 				vehname = "hgun_P07_F";
 				if((player getVariable "mymoney") >= thisprice) then
 				{

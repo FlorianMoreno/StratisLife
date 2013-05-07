@@ -19,7 +19,7 @@ if((player getVariable "airlicense") >= 1) then
 		if((lbCurSel 11127) == 0) then
 		{
 			displayname = "Little Bird";
-			thisprice = 40000;
+			thisprice = 80000;
 			vehname = "B_MH9_F";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -48,7 +48,7 @@ if((player getVariable "airlicense") >= 1) then
 		if((lbCurSel 11127) == 1) then
 		{
 			displayname = "KA60";
-			thisprice = 60000;
+			thisprice = 100000;
 			vehname = "O_Ka60_Unarmed_F";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -81,7 +81,7 @@ if((player getVariable "airlicense") >= 1) then
 		if((lbCurSel 11127) == 0) then
 		{
 			displayname = "Little Bird";
-			thisprice = 125000;
+			thisprice = 209800;
 			vehname = "B_MH9_F";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -110,7 +110,7 @@ if((player getVariable "airlicense") >= 1) then
 		if((lbCurSel 11127) == 1) then
 		{
 			displayname = "KA60";
-			thisprice = 150000;
+			thisprice = 249991;
 			vehname = "O_Ka60_Unarmed_F";
 			if((player getVariable "mymoney") >= thisprice) then
 			{

@@ -183,6 +183,12 @@ _tmpStr = "";
             + "The cops may also serve warrants anywhere they have probable cause to believe a felony.";
             
     _rulesText set [ (count _rulesText), [ "16: Cop rules.", _tmpStr ] ];
+	
+	    // 17
+    _tmpStr = "-Language. We will not allow homophobic, racist, sectarianistic or any other discriminating kind of language.<br/>"
+            + "We will not take kindly to it as our community caters to everyone regardless of their age, race, nationality, ethnic background, gender or sexual preference.<br/>";
+            
+    _rulesText set [ (count _rulesText), [ "17: Language Rules", _tmpStr ] ];
 
     // Create a main item on the left map panel
     player createDiarySubject [ "MOGRules", _rulesTitle ];

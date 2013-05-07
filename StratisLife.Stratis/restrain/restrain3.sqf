@@ -4,13 +4,14 @@ victim2 = _victim;
 hint format["%1 has been restrained by %2!",_victim,_shooter];
 if (player == _victim) then 
 {
-	titleText ["You have been restrained!","Plain",5];
+	["Restrained",["Restrained", "You have been handcuffed!."]] call bis_fnc_showNotification;
 	isrestrained = 1;
 	_unit = _victim;
 	_anim = "AmovPercMstpSnonWnonDnon_Ease";
+	disableUserInput true;
 	while{isrestrained == 1} do
 	{
-        //_unit switchMove _anim;
+        _unit switchMove _anim;
 		_unit playMove _anim;
 		waitUntil{animationState _unit != _anim};
 	};

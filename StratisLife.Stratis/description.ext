@@ -111,6 +111,39 @@ class CfgNotifications
 		priority = 1;
 		difficulty[] = {"netStats"};
 	};
+	class Bail
+	{
+		title = "Bail!";
+        iconPicture = "icons\moneyCheckHud.paa";
+		iconText = "";
+		description = "%2";
+        duration = 3;
+		color[] = {1,1,1,1};
+		priority = 10;
+		difficulty[] = {"netStats"};
+	};
+	class Jail
+	{
+		title = "Jailed!";
+        iconPicture = "icons\jail.paa";
+		iconText = "";
+		description = "%2";
+        duration = 3;
+		color[] = {1,1,1,1};
+		priority = 9;
+		difficulty[] = {"netStats"};
+	};
+	class Restrained
+	{
+		title = "Restrained!";
+        iconPicture = "icons\restrained.paa";
+		iconText = "";
+		description = "%2";
+        duration = 3;
+		color[] = {1,1,1,1};
+		priority = 9;
+		difficulty[] = {"netStats"};
+	};
 };
 
 class CfgFunctions
