@@ -8,7 +8,7 @@ if((player getVariable "boatlicense") >= 1) then
 		if((lbCurSel 11124) == 0) then
 		{
 			displayname = "Life Boat";
-			thisprice = 3000;
+			thisprice = 5000;
 			vehname = "B_Lifeboat";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -37,7 +37,7 @@ if((player getVariable "boatlicense") >= 1) then
 		if((lbCurSel 11124) == 1) then
 		{
 			displayname = "Assault Boat";
-			thisprice = 5000;
+			thisprice = 7500;
 			vehname = "B_Assaultboat";
 			if((player getVariable "mymoney") >= thisprice) then
 			{

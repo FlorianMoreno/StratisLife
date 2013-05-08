@@ -14,10 +14,10 @@ if (_state == 1) then
     
     player setVariable["isrestrained",0,true];
     
-    player setVariable["bankmoney",55000,true];
+    player setVariable["bankmoney",10000,true];
     player setVariable["iswanted",0,true];
     player setVariable["isrestrained",0,true];
-    player setVariable["mypaycheck", 1500,true];
+    player setVariable["mypaycheck", 1750,true];
 
     player setVariable["driverlicense",0,true];
     player setVariable["airlicense",0,true];
@@ -32,7 +32,7 @@ if (_state == 1) then
     {
         player setVariable["driverlicense", 1,true];
 		player setVariable["pistollicense",1,true];
-        player setVariable["mypaycheck", 1000,true];
+        player setVariable["mypaycheck", 2503,true];
         Player addEventHandler ["Fired","shooter = (_this select 0); weapon = (_this select 1); execVM 'firedEH.sqf'"];
         //personalinv = player addaction ["Personal Inventory", "copinventory.sqf", [], 1, false, false, "", ""];
         //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];

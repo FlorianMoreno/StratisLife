@@ -22,8 +22,8 @@ if !(isServer) then
 
 playerTotalSpace = 60;
 
-dp1reward = 5000;
-dp2reward = 6000;
+dp1reward = 6000;
+dp2reward = 9000;
 whalerate = 1;
 heroinrate = 1;
 applerate = 2;
@@ -32,15 +32,15 @@ oilrate = 1;
 woodrate = 1;
 rabbitrate = 1;
 
-applesellprice = 325;
-woodsellprice = 500;
-fishsellprice = 750;
-heroinsellprice = 1250;
-whalesellprice = 10000;
-oilsellprice = 12000;
-oilprocessprice = 250;
-heroinprocessprice = 250;
-rabbitsellprice = 900;
+applesellprice = 225;
+woodsellprice = 300;
+fishsellprice = 550;
+heroinsellprice = 1050;
+whalesellprice = 7000;
+oilsellprice = 7000;
+oilprocessprice = 2050;
+heroinprocessprice = 2050;
+rabbitsellprice = 750;
 
 thirstLevel = 100;
 starttrue = 0;

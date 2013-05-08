@@ -47,7 +47,7 @@ if((player getVariable "driverlicense") >= 1) then
 		if((lbCurSel 11121) == 1) then
 		{
 			displayname = "Offroad";
-			thisprice = 7500;
+			thisprice = 10000;
 			vehname = "C_Offroad";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -76,7 +76,7 @@ if((player getVariable "driverlicense") >= 1) then
 		if((lbCurSel 11121) == 2) then
 		{
 			displayname = "Hunter";
-			thisprice = 10000;
+			thisprice = 15000;
 			vehname = "B_Hunter_F";
 			if((player getVariable "mymoney") >= thisprice) then
 			{
@@ -138,7 +138,7 @@ if((player getVariable "driverlicense") >= 1) then
 		if((lbCurSel 11121) == 1) then
 		{
 			displayname = "Offroad";
-			thisprice = 7500;
+			thisprice = 10000;
 			vehname = "C_Offroad";
 			if((player getVariable "mymoney") >= thisprice) then
 			{

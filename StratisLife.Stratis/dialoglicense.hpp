@@ -67,7 +67,7 @@ class Title : BaseRscSingleText
 	{
 		idc = -1;
 		text = "Buy Hunting License";
-		action = "if((player getVariable 'huntinglicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 20000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 20000),true]; player setVariable['huntinglicense',1,true]; }};closeDialog 0;execVM 'menu\licensemenu.sqf';";
+		action = "if((player getVariable 'huntinglicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 40000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 40000),true]; player setVariable['huntinglicense',1,true]; }};closeDialog 0;execVM 'menu\licensemenu.sqf';";
 		x = 0.65; y = 0.350;
 		w = 0.4;
 	};
@@ -86,7 +86,7 @@ class Title : BaseRscSingleText
 		moving = 1;
 		colorBackground[] = { 0.7, 0.7, 0.7, 0.8 };
 		sizeEx = 0.04;
-		text = "20000$";
+		text = "40000$";
 		x = 1.15; y = 0.350;
 		w = 0.15;
 	};
@@ -94,7 +94,7 @@ class Title : BaseRscSingleText
 	{
 		idc = -1;
 		text = "Buy Air License";
-		action = "if((player getVariable 'airlicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 100000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 100000),true]; player setVariable['airlicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
+		action = "if((player getVariable 'airlicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 200000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 200000),true]; player setVariable['airlicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
 		x = 0.65; y = 0.425;
 		w = 0.4;
 	};
@@ -113,7 +113,7 @@ class Title : BaseRscSingleText
 		moving = 1;
 		colorBackground[] = { 0.7, 0.7, 0.7, 0.8 };
 		sizeEx = 0.04;
-		text = "100000$";
+		text = "200000$";
 		x = 1.15; y = 0.425;
 		w = 0.15;
 	};
@@ -148,7 +148,7 @@ class Title : BaseRscSingleText
 	{
 		idc = -1;
 		text = "Buy Oil Processing License";
-		action = "if((player getVariable 'oilprocesslicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 15000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 15000),true]; player setVariable['oilprocesslicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
+		action = "if((player getVariable 'oilprocesslicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 10000) then{player setVariable['mymoney',((player getVariable 'mymoney') - 10000),true]; player setVariable['oilprocesslicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
 		x = 0.65; y = 0.575;
 		w = 0.4;
 	};
@@ -167,7 +167,7 @@ class Title : BaseRscSingleText
 		moving = 1;
 		colorBackground[] = { 0.7, 0.7, 0.7, 0.8 };
 		sizeEx = 0.04;
-		text = "15000$";
+		text = "10000$";
 		x = 1.15; y = 0.575;
 		w = 0.15;
 	};
@@ -175,7 +175,7 @@ class Title : BaseRscSingleText
 	{
 		idc = -1;
 		text = "Buy Rifle License";
-		action = "if((player getVariable 'riflelicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 106954) then{player setVariable['mymoney',((player getVariable 'mymoney') - 106954),true]; player setVariable['riflelicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
+		action = "if((player getVariable 'riflelicense') >= 1) then{['Warning',['You already have this license!']] call bis_fnc_showNotification;}else{if((player getVariable 'mymoney') >= 239392) then{player setVariable['mymoney',((player getVariable 'mymoney') - 239392),true]; player setVariable['riflelicense',1,true];}};closeDialog 0; execVM 'menu\licensemenu.sqf';";
 		x = 0.65; y = 0.650;
 		w = 0.4;
 	};
@@ -194,7 +194,7 @@ class Title : BaseRscSingleText
 		moving = 1;
 		colorBackground[] = { 0.7, 0.7, 0.7, 0.8 };
 		sizeEx = 0.04;
-		text = "106954$";
+		text = "239392$";
 		x = 1.15; y = 0.650;
 		w = 0.15;
 	};
