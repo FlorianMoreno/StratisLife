@@ -65,7 +65,7 @@ if((player getVariable "driverlicense") >= 1) then
 				
 				
 				_swat = [player] call LIFE_fnc_isSwat;
-				[_veh,_swat] execVM "Car_colour.sqf";
+				[[[_veh,_swat],"Car_colour.sqf"],"BIS_fnc_execVM",false,true] spawn BIS_fnc_MP;
 				
 				
 				
@@ -100,7 +100,7 @@ if((player getVariable "driverlicense") >= 1) then
                 clearBackpackCargoGlobal _veh;
 				
 				_swat = [player] call LIFE_fnc_isSwat;
-				[_veh,_swat] execVM "Car_colour.sqf";
+				[[[_veh,_swat],"Car_colour.sqf"],"BIS_fnc_execVM",false,true] spawn BIS_fnc_MP;
 				
 				removeammo = _veh;
 				publicVariable "removeammo";
