@@ -63,6 +63,13 @@ if((player getVariable "driverlicense") >= 1) then
                 clearItemCargoGlobal _veh;
                 clearBackpackCargoGlobal _veh;
 				
+				
+				_swat = [player] call LIFE_fnc_isSwat;
+				[_veh,_swat] execVM "Car_colour.sqf";
+				
+				
+				
+				
 				removeammo = _veh;
 				publicVariable "removeammo";
                 
@@ -91,6 +98,9 @@ if((player getVariable "driverlicense") >= 1) then
                 clearMagazineCargoGlobal _veh;
                 clearItemCargoGlobal _veh;
                 clearBackpackCargoGlobal _veh;
+				
+				_swat = [player] call LIFE_fnc_isSwat;
+				[_veh,_swat] execVM "Car_colour.sqf";
 				
 				removeammo = _veh;
 				publicVariable "removeammo";
