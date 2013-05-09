@@ -10,7 +10,7 @@ _vehicle setObjectTexture [0,"#(ai,64,64,1)Fresnel(1.3,7)"];
 
 } else {
 
-_vehicle setObjectTexture [0,'#(argb,8,8,3)color(0.8,0.8,0.8,1)'];
+_vehicle setObjectTexture [0,'#(argb,8,8,3)color(0.6,0.6,0.6,1)'];
 
 };
 
