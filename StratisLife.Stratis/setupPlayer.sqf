@@ -39,6 +39,17 @@ if (_state == 1) then
         execVM "somscripts\som_init.sqf";
         patrolmission = 0;
     };
+	if(side player == east) then
+    {
+        player setVariable["driverlicense", 1,true];
+		player setVariable["pistollicense",1,true];
+        player setVariable["mypaycheck", 2503,true];
+        Player addEventHandler ["Fired","shooter = (_this select 0); weapon = (_this select 1); execVM 'firedEH.sqf'"];
+        //personalinv = player addaction ["Personal Inventory", "copinventory.sqf", [], 1, false, false, "", ""];
+        //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];
+        execVM "somscripts\som_init.sqf";
+        patrolmission = 0;
+    };
     if(side player == civilian) then
     {
         "stunned" addPublicVariableEventHandler {if(player == stunned)then{stunned execVM 'stun.sqf'; execVM 'stunsound.sqf';};};
@@ -54,6 +65,7 @@ if (_state == 2) then
 
 if ( [player] call LIFE_fnc_isSwat ) then
 {
+	execVM "somscripts\som_init.sqf";
     [player] call LIFE_fnc_swatLoadout;
 };
 
@@ -197,6 +209,21 @@ if ( [player] call LIFE_fnc_isSwat ) then
             //null = [] execvm "somstart.sqf";
             //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];
         };
+		if (side player == east) then
+        {
+            personalinv = player addAction ["Personal Inventory", "copinventory.sqf", [], 1, false, false, "", ""];
+            act1 = player addAction ["-=SWAT Menu=-", "somscripts\swatmenu\open.sqf", [], 1, false, false, "", ""];
+            
+            Markers = [];
+            execVM "hud\Markersswat.sqf";
+            
+            // did these ever get used?
+            //null = [] execvm "somstart.sqf";
+            //act1 = player addaction ["Cop Menu [W.I.P]", "somscripts\menu\open.sqf", [], 1, false, false, "", ""];
+        };
+		
+		
+		
 		sleep (random 6);
 		jip_uid = [getplayeruid player,player];
 		publicvariableserver "jip_uid";
