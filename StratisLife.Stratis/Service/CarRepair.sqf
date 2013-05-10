@@ -49,7 +49,9 @@ if( ((vehicle player) != player) && ((vehicle player) iskindof "Car") )then
         };
 
         if (_body != 0) then {
-            Hint "Fixing your body work";
+            
+            ["VehicleRepair",["Fixing body work", "icons\vehicles\veh-hunt-hull.paa"]] call bis_fnc_showNotification;
+            
             sleep (_body * 6.5);
             _veh setHitPointDamage ["HitBody",0];
             _veh setHitPointDamage ["HitGlass1",0];
@@ -63,14 +65,18 @@ if( ((vehicle player) != player) && ((vehicle player) iskindof "Car") )then
         };
         
         if(_Engine != 0) then {
-            hint "Fixing/Replacing your Engine";
+            
+            ["VehicleRepair",["Fixing engine", "icons\vehicles\veh-hunt-eng.paa"]] call bis_fnc_showNotification;
+            
             sleep (_Engine * 6);
             _veh setHitPointDamage ["HitEngine",0];
             _workwasdone = True;
         };
         
         if(_fuel != 0) then {
-            hint "Fixing your Fuel Tank";
+            
+            ["VehicleRepair",["Fixing fuel tank", "icons\vehicles\veh-hunt-fuel.paa"]] call bis_fnc_showNotification;
+            
             sleep (_Fuel * 5);
             _veh setHitPointDamage ["HitFuel",0];
             _workwasdone = True;
@@ -78,7 +84,8 @@ if( ((vehicle player) != player) && ((vehicle player) iskindof "Car") )then
         
         if((_w1 != 0) || (_w2 != 0) || (_w3 != 0) || (_w4 != 0)) then
         {
-            Hint "Fixing your wheels";
+            ["VehicleRepair",["Fixing wheels", "icons\vehicles\veh-hunt-wheels.paa"]] call bis_fnc_showNotification;
+            
             sleep (_w1 * 5);
             _veh setHitPointDamage ["HitLBWheel",0];
             sleep (_w2 * 5);
